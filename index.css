@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main-section{
+    height: 500px;
+    width: 100%;
+}
+
+/* The main wrapper for the benefits section including the picture and content */
+.benefits-section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 50vh;
+}
+
+/* Benefits picture CSS */
+.benefits-content-pic-wrapper{
+    background-image: url("images/dealer-photo.jpeg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100%;
+}
+
+.benefits-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%
+}
+
+.benefits-title{
+    width: 100%;
+}
+
+.benefits-title>h2{
+    text-align: center;
+    font-size: 3rem;
+    text-transform: capitalize;
+    padding: 10px 0px;
+    color: #C80000;
+}
+
+.benefits-description{
+    width: 90%;
+}
+
+
+.benefits-description>p{
+    font-size: 1.2rem;
+    padding: 10px 0px;
+    line-height: 1.5rem;
+    color: #C80000;
+}
+
+@media only screen and (max-width: 768px) {
+    .benefits-title>h2 {
+      font-size: 2.4rem;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .benefits-content-wrapper{
+        width: 75%
+    }
+    .benefits-content-pic-wrapper{
+        width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 414px) {
+    .benefits-content-wrapper{
+        width: 90%
+    }
+  }
